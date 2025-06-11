@@ -10,7 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
-
+app.use(cors({
+  origin: 'https://splendorous-baklava-69b6a6.netlify.app', // Replace with your frontend URL
+}));
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB connected");
