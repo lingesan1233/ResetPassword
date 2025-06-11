@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use(cors({
-  origin: 'https://splendorous-baklava-69b6a6.netlify.app', // Replace with your frontend URL
+  origin: 'https://sparkly-tiramisu-b2a8de.netlify.app/', // Replace with your frontend URL
 }));
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
