@@ -1,2 +1,1 @@
-// Replace with your backend URL later
-export const BASE_URL = 'https://resetpassword-1.onrender.com';
+export const BASE_URL = "https://resetpassword-1.onrender.com/api";
