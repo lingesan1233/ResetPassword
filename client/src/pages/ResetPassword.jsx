@@ -16,7 +16,7 @@ export default function ResetPassword() {
   };
 
   return (
-    <div className="page">
+    <div>
       <h2>Reset Password</h2>
       <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
       <input placeholder="New Password" onChange={e => setNewPassword(e.target.value)} />
