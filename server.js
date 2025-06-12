@@ -21,3 +21,7 @@ mongoose.connect(process.env.MONGO_URI)
     });
   })
   .catch(err => console.log(err));
+const allowedOrigins = [
+  //'https://6847394284fffc11d9715017--calm-froyo-09c0c1.netlify.app', // Netlify Preview
+  'https://flourishing-mochi-bdbd10.netlify.app' // Netlify Production
+];
