@@ -6,7 +6,9 @@ require('dotenv').config();
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-netlify-app.netlify.app'
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
